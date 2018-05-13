@@ -2,15 +2,15 @@ var menuButton = document.querySelector(".main-menu__button");
 var jsButton = document.querySelector(".no-js-button");
 var menu = document.querySelector(".main-menu__list");
 var menuWrapper = document.querySelector(".main-menu");
-var menuJS = document.querySelector(".no-js-menu");
+var menuJS = document.querySelector(".no-menu");
 
 menuButton.addEventListener("click", function () {
   menuWrapper.classList.toggle("main-menu--opened");
   menu.classList.toggle("mobile-menu");
 });
 
-menuJS.classList.remove("no-js-menu");
-jsButton.classList.remove("no-js-button");
+menuJS.classList.remove("no-menu");
+jsButton.classList.remove("no-button");
 
 // интерактивная карта
 //Yandex version
