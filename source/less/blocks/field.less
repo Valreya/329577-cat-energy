@@ -1,0 +1,97 @@
+.field {
+ font-family: @main-font;
+ font-size: 16px;
+ line-height: 18px;
+ font-weight: 400;
+ padding: 0 20px 0 0;
+ border: 0;
+ border-top: 3px solid #68b738;
+ text-transform: uppercase;
+}
+.field__row {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-pack: justify;
+ -ms-flex-pack: justify;
+ justify-content: space-between;
+ -webkit-box-align: baseline;
+ -ms-flex-align: baseline;
+ align-items: baseline;
+ max-width: 100%;
+}
+.field__row--age .field__input {
+ margin-bottom: 22px;
+}
+.field__input:hover {
+ border-color: #cdcdcd;
+}
+.field__input:active,.field__input:focus {
+ border-color: #444;
+}
+.field__input--box {
+ -webkit-box-flex: 1;
+ -ms-flex-positive: 1;
+ flex-grow: 1;
+ margin-bottom: 15px;
+ padding: 14px 0 14px 14px;
+ border: 1px solid #e6e6e6;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ outline: 0;
+}
+.field__input--box:hover {
+ border-color: #cdcdcd;
+}
+.field__input--box:active,.field__input--box:focus {
+ border-color: #444;
+ -webkit-box-shadow: inset 0 0 0 1px #444;
+ box-shadow: inset 0 0 0 1px #444;
+}
+.field__input--box:active:invalid,.field__input--box:focus:invalid {
+ border-color: #ff8282;
+ -webkit-box-shadow: inset 0 0 0 1px #ff8282;
+ box-shadow: inset 0 0 0 1px #ff8282;
+}
+.field__label {
+ margin-right: 15px;
+}
+.field__legend {
+ font-family: @main-font;
+ font-size: 24px;
+ line-height: 24px;
+ font-weight: 400;
+ position: relative;
+ width: auto;
+ padding: 0 20px 0 0;
+ left: 0;
+ margin-top: 27px;
+ margin-bottom: 27px;
+ color: #111;
+ text-transform: none;
+ background-color: #fff;
+}
+@media (min-width: 768px) {
+ .field,.field__legend {
+  font-family: @main-font;
+  font-weight: 400;
+ }
+ .field {
+  margin: 28px 0 20px;
+  padding-left: 50px;
+  padding-right: 67px;
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .field__legend {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 70px;
+ }
+ .field__row .field__input {
+  padding: 21px 0 13px 21px;
+  margin-bottom: 21px;
+ }
+}
