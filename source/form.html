@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="fonts/oswaldregular.woff2" as="font" crossorigin="" type="font/woff2">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -15,13 +14,13 @@
         <div class="header__wrapper">
           <a class="header__logo">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-              <img class="header-logo__link" src="img/svg/logo-mobile.svg" alt="logo" width="33" height="38">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header-logo__link" src="img/logo-mobile.svg" alt="logo" width="33" height="38">
             </picture>
           </a>
           <a class="header__title">
-            <img class="header__title-image mobile-only" src="img/svg/logo-mobile-header.svg" alt="logo" width="101" height="18">
+            <img class="header__title-image mobile-only" src="img/logo-mobile-header.svg" alt="logo" width="101" height="18">
           </a>
         </div>
         <nav class="main-menu index-menu">
@@ -41,15 +40,15 @@
             <fieldset class="program__main field">
               <div class="field__row field__row--name">
                 <label class="field__label required" for="cat-name">Имя:</label>
-                 <input class="field__input field__input--box" type="text" placeholder="Барсик" id="cat-name" name="cat-name" required="">
+                <input class="field__input field__input--box" type="text" placeholder="Барсик" id="cat-name" name="cat-name" required="">
               </div>
               <div class="field__row field__row--weigth">
                 <label class="field__label required" for="cat-weight">Вес (кг):</label>
-                 <input class="field__input field__input--box" type="number" placeholder="7" id="cat-weight" name="cat-weight" required="">
+                <input class="field__input field__input--box" type="number" placeholder="7" id="cat-weight" name="cat-weight" required="">
               </div>
               <div class="field__row field__row--age">
                 <label class="field__label" for="cat-age">Возраст (лет):</label>
-                 <input class="field__input field__input--box" type="number" placeholder="7" id="cat-age" name="cat-age">
+                <input class="field__input field__input--box" type="number" placeholder="7" id="cat-age" name="cat-age">
               </div>
             </fieldset>
             <fieldset class="program__type field">
@@ -66,11 +65,11 @@
             <div class="program__contacts-wrapper">
               <div class="field__row email">
                 <label class="field__label email__label required" for="email">E-mail:</label>
-                 <input class="field__input email__input field__input--box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
+                <input class="field__input email__input field__input--box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
               </div>
               <div class="field__row phone">
                 <label class="field__label phone__label required" for="tel">Телефон:</label>
-                 <input class="field__input phone__input field__input--box" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required="">
+                <input class="field__input phone__input field__input--box" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required="">
               </div>
             </div>
           </fieldset>
@@ -79,20 +78,20 @@
             <textarea class="field__input program__comment-area field__input--box" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program__additional additional field">
-            <legend class="field__legend program__subtitle">  Дополнительно</legend>
+            <legend class="field__legend program__subtitle">Дополнительно</legend>
             <div class="program__wrapper">
               <input class="field__input additional__input" type="checkbox" name="sweetener" id="sweetener">
-               <label class="field__label additional__label" for="sweetener">  Сахарозаменитель</label>
+               <label class="field__label additional__label" for="sweetener">Сахарозаменитель</label>
                <input class="field__input additional__input" type="checkbox" name="water" id="water">
-               <label class="field__label additional__label" for="water">  Питьевая вода</label>
+               <label class="field__label additional__label" for="water">Питьевая вода</label>
                <input class="field__input additional__input" type="checkbox" name="milk" id="milk" disabled="">
-               <label class="field__label additional__label" for="milk">  Молоко</label>
+               <label class="field__label additional__label" for="milk">Молоко</label>
                <input class="field__input additional__input" type="checkbox" name="vitamins" id="vitamins">
-               <label class="field__label additional__label" for="vitamins">  Витамины</label>
+               <label class="field__label additional__label" for="vitamins">Витамины</label>
             </div>
           </fieldset>
           <div class="required-note">* &mdash; Обязательные поля</div>
-          <button class="program__submit button" type="submit">  Отправить заявку</button>
+          <button class="program__submit button" type="submit">Отправить заявку</button>
         </form>
        <section class="contacts">
           <div class="contacts__invite">
@@ -137,9 +136,7 @@
           </div>
         </footer>
       </main>
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     </div>
     <script src="js/script.js"></script>
-    <script src="../assets/js/mainButton.js"></script>
-  </body>
+   </body>
 </html>
