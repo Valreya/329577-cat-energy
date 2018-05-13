@@ -5,9 +5,19 @@
  font-weight: 400;
  padding: 0 20px 0 0;
  border: 0;
- border-top: 3px solid #68b738;
  text-transform: uppercase;
 }
+.field::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(20% + 22px);
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
+  background-color: #68b738;
+}
+
 .field__row {
  display: -webkit-box;
  display: -ms-flexbox;
